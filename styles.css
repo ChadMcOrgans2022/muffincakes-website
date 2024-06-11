@@ -1,0 +1,14 @@
+.main-box{
+    width:auto;
+    height:fit-content;
+    justify-content: center;
+    background-color: purple;
+    justify-self: center;
+}
+.text{
+    align-self: center;
+    stroke:white;
+    stroke-width: 25%;
+    font-size: 50vmin;
+    text-align: center;
+}
