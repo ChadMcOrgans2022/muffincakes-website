@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, sans-serif;
+}
+
+h1{text-align: center}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(61, 61, 61);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center
+}
+
+.navbar a:hover{
+    background-color: rgb(99, 99, 99);
+}
+.navbar li{
+    float: left;
+}
+#joinText{
+    color: wheat;
+    font-family:'Courier New', Courier, monospace;
+    font-size:large;
+    background-size: cover;
+    background: linear-gradient(to right, purple, purple, purple, blue, purple, purple, purple);
+}
