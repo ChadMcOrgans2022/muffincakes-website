@@ -1,11 +1,6 @@
 body{
-    margin: 0px;
     background-color: rgb(240, 240, 240);
     font-family: Arial, sans-serif;
-}
-main{
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 h1{text-align: center}
@@ -31,4 +26,11 @@ h1{text-align: center}
 }
 .navbar li{
     float: left;
+}
+#joinText{
+    color: wheat;
+    font-family:'Courier New', Courier, monospace;
+    font-size:large;
+    background-size: cover;
+    background: linear-gradient(to right, purple, purple, purple, blue, purple, purple, purple);
 }
