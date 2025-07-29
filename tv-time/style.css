@@ -1,14 +1,63 @@
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #bcc0d2;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode{
+    --base-color: #111528;
+    --base-variant: #232738;
+    --text-color: #e8e9ed;
+    --secondary-text: #b0b2c3;
+    --primary-color: #3a435d;
+    --accent-color: #0073ff;
+}
+
+
 body{
     margin: 0px;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--base-color);
     font-family: Arial, sans-serif;
 }
 main{
     margin-left: 20px;
     margin-right: 20px;
+    background-color: var(--base-color);
 }
 
-h1{text-align: center}
+h1{
+    text-align: center;
+    color: var(--base-color);
+}
+
+#theme-switch{
+    background-color: var(--base-color);
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+    display:none
+}
+
+.darkmode #theme-switch svg:first-child{
+    display:none;
+}
+.darkmode #theme-switch svg:last-child{
+    display:block;
+}
 
 .navbar ul{
     list-style-type: none;
@@ -19,7 +68,7 @@ h1{text-align: center}
 }
 
 .navbar a{
-    color:white;
+    color: var(--text-color);
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -27,7 +76,8 @@ h1{text-align: center}
 }
 
 .navbar a:hover{
-    background-color: rgb(99, 99, 99);
+    background-color: var(--accent-color);
+    color: var(--secondary-text);
 }
 .navbar li{
     float: left;
