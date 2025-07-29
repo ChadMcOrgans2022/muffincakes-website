@@ -37,11 +37,9 @@
 }
 
 #Text{
-    color: wheat;
+    color: var(--text-color);
     font-family:'Courier New', Courier, monospace;
     font-size:large;
-    background-size: cover;
-    background: linear-gradient(to right, purple, purple, purple, blue, purple, purple, purple);
     
 }
 
