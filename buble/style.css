@@ -1,7 +1,99 @@
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #bcc0d2;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode{
+    --base-color: #111528;
+    --base-variant: #232738;
+    --text-color: #e8e9ed;
+    --secondary-text: #b0b2c3;
+    --primary-color: #3a435d;
+    --accent-color: #0073ff;
+}
+
 #buble{
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    color: --base-color;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--base-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+#main{
+    margin: 0px;
+    background-color: var(--base-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+
+#theme-switch{
+    background-color: var(--base-color);
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+    display:none
+}
+
+.darkmode #theme-switch svg:first-child{
+    display:none;
+}
+.darkmode #theme-switch svg:last-child{
+    display:block;
+}
+
+#main{
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    background-color: var(--base-color);
+    background-size: cover;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(61, 61, 61);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center
+}
+
+.navbar a:hover{
+    background-color: var(--accent-color);
+    color: var(--secondary-text);
+}
+.navbar li{
+    float: left;
 }
