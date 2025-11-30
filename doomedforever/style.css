@@ -1,0 +1,110 @@
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #2f2f30;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+
+.darkmode{
+    --base-color: #111528;
+    --base-variant: #232738;
+    --text-color: #e8e9ed;
+    --secondary-text: #b0b2c3;
+    --primary-color: #3a435d;
+    --accent-color: #0073ff;
+}
+
+body{
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+h1{text-align: center}
+
+#main{
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    background-color: var(--base-color);
+    background-size: cover;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(61, 61, 61);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center
+}
+
+.navbar a:hover{
+    background-color: var(--accent-color);
+    color: var(--secondary-text);
+}
+.navbar li{
+    float: left;
+}
+#JoinText{
+    color: var(--secondary-text);
+    font-family:'Courier New', Courier, monospace;
+    font-size:large;
+    background-size: cover;
+    text-align: center;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--base-color);
+    font-family: Arial, sans-serif;
+    text-decoration-color: var(--text-color);
+}
+footer{
+    text-align: center;
+    color: var(--secondary-text);
+    font-size: small;
+    margin-top: 20px;
+}
+
+#theme-switch{
+    background-color: var(--base-color);
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+#theme-switch svg:last-child{
+    display:none
+}
+
+.darkmode #theme-switch svg:first-child{
+    display:none;
+}
+.darkmode #theme-switch svg:last-child{
+    display:block;
+}

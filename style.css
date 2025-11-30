@@ -1,8 +1,9 @@
 :root{
     --base-color: white;
     --base-variant: #e8e9ed;
-    --text-color: #bcc0d2;
-    --secondary-text: #232738;
+    --text-color: #3c3d42;
+    --nav-text: #e8e9ed;
+    --secondary-text: #9298b0;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
 }
@@ -11,10 +12,12 @@
     --base-color: #111528;
     --base-variant: #232738;
     --text-color: #e8e9ed;
+    --nav-text: #e8e9ed;
     --secondary-text: #b0b2c3;
     --primary-color: #3a435d;
     --accent-color: #0073ff;
 }
+
 
 #theme-switch{
     background-color: var(--base-color);
@@ -27,6 +30,33 @@
     align-items: center;
 
 }
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(61, 61, 61);
+    color: var(--nav-text);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center
+    
+}
+
+.navbar a:hover{
+    background-color: var(--accent-color);
+    color: var(--secondary-text);
+}
+.navbar li{
+    float: left;
+}
+
 #theme-switch svg{
     fill: var(--primary-color);
 }
@@ -58,27 +88,4 @@ h1{
     color: var(--text-color)
 }
 
-.navbar ul{
-    list-style-type: none;
-    background-color: rgb(61, 61, 61);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
 
-.navbar a{
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center
-    
-}
-
-.navbar a:hover{
-    background-color: var(--accent-color);
-    color: var(--secondary-text);
-}
-.navbar li{
-    float: left;
-}
